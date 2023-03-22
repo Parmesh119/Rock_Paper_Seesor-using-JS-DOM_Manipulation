@@ -5,7 +5,7 @@ let p1 = "",p2 = "", p3 = ""
 let c1 = 0,c2 = 0,c3 = 0
 let cnt1 = 0, cnt2 = 0,cnt3 = 0
 // 1 = rock, 2 = seesor, 3 = paper
-function red(){
+red = () => {
      cnt1=cnt1 + 1
      document.getElementById('one').innerHTML = `click ${cnt1} time`
      console.log('you choose rock')
@@ -21,7 +21,7 @@ function red(){
      console.log('Computer choose', c1);
      test(p1, c1)
 }
-function green(){
+green = () => {
      cnt2+=1
      document.getElementById('two').innerHTML = `click ${cnt2} time`
      console.log('you choose seesor')
@@ -37,7 +37,7 @@ function green(){
      console.log('Computer choose', c2);
      test(p2, c2)
 }
-function blue(){
+blue = () => {
      cnt3+=1
      document.getElementById('three').innerHTML = `click ${cnt3} time`
      console.log('you choose paper')
